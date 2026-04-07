@@ -1,4 +1,22 @@
-void main()
-{
-  print("Hello Word!");
-}
+  import 'dart:math';
+
+void main(){
+  double valor1 = 144;
+  int valor2 = 2;
+
+  double soma = valor1 + valor2;
+  double subtracao = valor1 - valor2;
+  double multiplicacao = valor1 * valor2;
+  double divisao = valor1 / valor2;
+  double resto = valor1 % valor2;
+  double potencia = pow(valor1, valor2) as double;
+  double raiz = pow(valor1, 1/valor2) as double;
+
+  print("A soma entre $valor1 e $valor2 é $soma");
+  print("A subtração entre $valor1 e $valor2 é $subtracao");
+  print("A multiplicação entre $valor1 e $valor2 é $multiplicacao");
+  print("A divisao entre $valor1 e $valor2 é $divisao");
+  print("O resto da divisão entre $valor1 e $valor2 é $resto");
+  print("A potência entre $valor1 e $valor2 é $potencia");
+  print("A raiz entre $valor1 e $valor2 é $raiz");
+} 
