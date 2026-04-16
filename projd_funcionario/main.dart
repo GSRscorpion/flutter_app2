@@ -1,5 +1,6 @@
 import 'dart:io';
 
+/*
 void main(){
 
 print('Digite o nome do funcionário');
@@ -19,7 +20,27 @@ print('Nome: $nome ');
 print('Valor da hora: R\$ $valorHora ');
 print('Horas trabalhadas do mês: $cargaTrabalhadas ');
 print('Salário: R\$ $salario ');
-
-
-
 }
+*/
+
+
+void main(){
+    stdout.write("\nInforme os dados do funcionário\n"
+    "Nome: ");
+    String nome = stdin.readLineSync()!;
+
+    stdout.write("Valor hora: ");
+    double valorHora = double.parse(stdin.readLineSync()!);
+
+    stdout.write("Carga horária do mês: ");
+    double cargaHorariaMes = double.parse(stdin.readLineSync()!);
+
+    double salarioBase = valorHora * cargaHorariaMes;
+
+    print("\nDados do funcionário\n"
+    "Nome: $nome\n"
+    "Valor hora: $valorHora\n"
+    "Carga horária do mês: $cargaHorariaMes\n"
+    "Salário base: $salarioBase\n");
+}
+
